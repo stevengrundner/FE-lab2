@@ -24,15 +24,15 @@ Instructions: The HTML file is complete and images have been provided. The CSS f
 -----------------------------------------------------
 
 PART 1: Using the ELEMENT Selector:
-* Step 1: Target the html BODY element and give it a top and bottom margin of 1rem and a left and right margin of 5rem.
-* Step 2: Target the page title and give it a filter of drop-shadow with x offset of 2 pixels, y offset of 2 pixels, blur of 1 pixel and hex color code of #0f6a9e.(See documentation https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
-* Step 3: Target all of the paragraphs and lists on the page to give it a font size of 20 pixels. 
-* Step 4: Target all of the image elements, assign the following:
+--      * Step 1: Target the html BODY element and give it a top and bottom margin of 1rem and a left and right margin of 5rem.
+--      * Step 2: Target the page title and give it a filter of drop-shadow with x offset of 2 pixels, y offset of 2 pixels, blur of 1 pixel and hex color code of #0f6a9e.(See documentation https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
+--      * Step 3: Target all of the paragraphs and lists on the page to give it a font size of 20 pixels.    
+--      * Step 4: Target all of the image elements, assign the following:
         * margin (top, right, bottom, and left) of 1 rem
         * border radius of 1rem (See documentation https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
         * box shadow with an x offset of 2 pixels, y offset of 2 pixels, blur of 2 pixels, spread radius of 1 pixel, a, rgb color of black with a transparency of 0.5. (See documentation https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
-* Step 5: The top image has a caption, give it a font color of rgb(0, 58, 66).
-* Step 6: Align the paragraph in the footer to the center.(See documentation https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
+--      * Step 5: The top image has a caption, give it a font color of rgb(0, 58, 66).
+--      * Step 6: Align the paragraph in the footer to the center.(See documentation https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
 
 -----------------------------------------------------
 
@@ -43,12 +43,37 @@ PART 2: Using ID or CLASS Selectors:
 * Step 4: In the DIV that has the 4 images, justify the content by putting space around each image.
 * Step 5: Give the DIV that houses the "Top 5 Places to Visit..." a background color of rgb(0, 58, 66) and a border radius of 1 rem.
 * Step 6: The DIV that houses the "Tips and Reccs" appears to be squished when the screen size is less than 1100 pixels. Add to the appropriate MEDIA QUERY a property that will allow the div to wrap down and then justify the contents to the center. Start by taking a look at the CSS for that DIV outside of the MEDIA QUERY to understand how the DIV is behaving.
-
 -----------------------------------------------------
-
 */
 
 /* ↓ YOUR CSS CODE HERE ↓  */
+
+body { margin: 1rem 5rem
+}
+
+h1 {
+        filter: drop-shadow(2px 2px 1px #0f6a9e);
+}
+
+p, li {    
+        font-size: 20px;
+}
+
+img{
+        margin: 1rem;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+figcaption{
+        color: rgb(0,58,66);
+}
+
+footer{
+        text-align: center;
+}
+
+
 
 /* 
 The asterisk (*) selector targets every element on the page. It is called the UNIVERSAL SELECTOR. Using a temporary red border around elements can prove to be helpful with visualizing the CSS box-model. Seeing all of the margins, borders, and padding of all 
